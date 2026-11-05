@@ -41,7 +41,7 @@ cp configs/annotation.example.json configs/local.json
 `flash-linear-attention`、`causal-conv1d` 需结合 GPU/CUDA 编译环境自行安装；
 首窗回执记录实际加速包和函数调用。仅安装基础依赖不能声称复现生产吞吐。
 
-## 同事需要修改的部分
+## 需要修改的部分
 
 仓库提供的是**可运行的叠衣服示例**，尚未适配其他任务和相机。
 

@@ -1,0 +1,23 @@
+{
+  "qwen": {
+    "model": "/path/to/Qwen3.5-9B",
+    "gpu": 0,
+    "sampling": {
+      "topic": "/egohalo/record/cam0/h264",
+      "window_s": 3.0,
+      "interval_s": 0.5,
+      "longest_edge": 960,
+      "jpeg_quality": 80,
+      "decode_threads": 1,
+      "cpu_threads": 4
+    }
+  },
+  "review": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "codex_binary": "codex",
+    "call_timeout_seconds": 900,
+    "transport_retry_delays_seconds": [60, 300]
+  },
+  "method_dir": "../skills"
+}

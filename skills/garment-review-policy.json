@@ -1,0 +1,36 @@
+{
+  "version": "garment-review-v2",
+  "actions": {
+    "unfold_garment": "Open or spread a previously folded or bunched garment.",
+    "position_garment": "Place, rotate, align or reposition the garment for the task.",
+    "smooth_garment": "Smooth or press fabric flat without making a new fold.",
+    "flip_garment": "Turn the whole garment onto its other face, rather than rotating it on the table.",
+    "fold_sleeve": "Fold an identifiable sleeve.",
+    "fold_side": "Fold an identifiable side panel of the garment body inward.",
+    "fold_lengthwise": "Fold the garment body with the crease parallel to its clearly identifiable long axis.",
+    "fold_crosswise": "Fold the garment body with the crease across its clearly identifiable long axis.",
+    "fold_section": "Make a visible fold whose part or orientation is not established; describe the observed fold specifically. Never use this as an episode-wide fallback.",
+    "adjust_folded_garment": "Align, tuck or press the already folded result without another distinct major fold."
+  },
+  "episode": {
+    "unit": "One independently started and completed folding attempt on one garment; repeated attempts on the same garment may be separate episodes.",
+    "start": "First observed task-directed placement, opening, positioning or handling for this attempt. Do not invent missing onset evidence.",
+    "end": "End of the last task-directed fold or final adjustment after completion is supported. Hands may remain in contact. Exclude subsequent static holding, resting, idle time, phone operation and mere removal of the finished garment.",
+    "boundary_precision": "Use real supplied frame anchors and retain necessary task context. A small unresolved exact-cut choice is a boundary note, not automatically an image-review issue.",
+    "phone_interruption": "Mark the affected task REVIEW; do not splice disjoint spans into a complete accepted task. Other tasks continue.",
+    "incomplete": "Preserve an observed unfinished task as INCOMPLETE. Missing or conflicting evidence about episode bounds, task identity or completion is REVIEW, not proof of completion.",
+    "internal_label_gaps": "When episode bounds, continuity and completion are supported, uncertain internal action labels may remain explicitly unlabeled. Preserve each interval, reason and source evidence; this alone does not block acceptance or downstream hand/export/publication. Do not use a label gap to hide a phone interruption or uncertainty about task completeness."
+  },
+  "execution": {
+    "normal_path": "One recording-wide text review using existing Qwen outputs; accept supported episodes after program validation.",
+    "image_review": "Only for a material, explicitly identified question unresolved by existing text. Inspect a bounded evidence packet, not every episode by default.",
+    "no_inference_replay": true,
+    "no_preview_generation": true,
+    "raw_outputs_immutable": true,
+    "short_actions": "Keep a supported action's actual positive duration, including durations below 1.5 seconds. Merge only when evidence establishes a genuinely continuous compatible operation, never to satisfy a duration threshold. Duration alone is not an issue or a reason to block an episode. If only the internal action label is uncertain, record an unlabeled span instead of inventing a name, stretching time or escalating the entire episode.",
+    "specificity": "Sleeve and side-panel codes take precedence over generic body-fold directions. Use fold_section when an observed fold is clear but its direction is not. Do not open an image issue solely to obtain a more specific name.",
+    "supplementation": "Text review may recover an action explicitly described in a Qwen description despite a vague action code. An entirely new visual observation requires inspected image evidence.",
+    "uncertainty": "Empty Qwen uncertainties are not a quality guarantee. Check chronology, completion, identity and contradictions; do not infer unseen content.",
+    "camera_scope": "Record actual available camera topics. Never claim three-camera review from single-camera evidence. Request a missing view only when it is necessary to resolve the concrete issue."
+  }
+}

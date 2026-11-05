@@ -1,0 +1,122 @@
+{
+  "source_repository": "https://github.com/NUSNiuMu/ego-data-pipeline",
+  "source": "2026-11-05 working tree; not asserted equal to a Git commit",
+  "files": [
+    {
+      "source": "src/ego_data_pipeline/pipeline.py",
+      "target": "src/ego_annotation/pipeline.py",
+      "source_sha256": "6174b1aec199d21613702c5d35443814e093bfeaabc0b14e03e9ee55c0311f50",
+      "target_sha256": "8eabe4c907fba011875ccb1b36c840d3c54fe1858184376d280d6ccf6e6213cf"
+    },
+    {
+      "source": "src/ego_data_pipeline/sampling.py",
+      "target": "src/ego_annotation/sampling.py",
+      "source_sha256": "887597b301893bdaaab0b9f8b30d45127d38d96f55393d93e7f41fbea7ea5cc4",
+      "target_sha256": "2df96d577279e454264d091b88bc302db0f10da72942b65d55b50b61a3acc697"
+    },
+    {
+      "source": "src/ego_data_pipeline/config.py",
+      "target": "src/ego_annotation/config.py",
+      "source_sha256": "9f1f0eef50a63beaaf810f376987cd2d13ada35291cdf14a954986e55e46e798",
+      "target_sha256": "9f1f0eef50a63beaaf810f376987cd2d13ada35291cdf14a954986e55e46e798"
+    },
+    {
+      "source": "src/ego_data_pipeline/qwen_batch.py",
+      "target": "src/ego_annotation/qwen_batch.py",
+      "source_sha256": "a3099522af6befe584c0f41deb7e00afe823ade26c299c00ec338d8dcb0d9e35",
+      "target_sha256": "a3099522af6befe584c0f41deb7e00afe823ade26c299c00ec338d8dcb0d9e35"
+    },
+    {
+      "source": "src/ego_data_pipeline/review.py",
+      "target": "src/ego_annotation/review.py",
+      "source_sha256": "6c8b2496cec72c531a5f837ee9f1e96825404badd593a89a271816aec6846aaa",
+      "target_sha256": "6c8b2496cec72c531a5f837ee9f1e96825404badd593a89a271816aec6846aaa"
+    },
+    {
+      "source": "src/ego_data_pipeline/review_transport.py",
+      "target": "src/ego_annotation/review_transport.py",
+      "source_sha256": "a3067433700f08116dd8a2267c4577ddfee392abdf2bb8fc7f72926c7e12259c",
+      "target_sha256": "a3067433700f08116dd8a2267c4577ddfee392abdf2bb8fc7f72926c7e12259c"
+    },
+    {
+      "source": "src/ego_data_pipeline/timing.py",
+      "target": "src/ego_annotation/timing.py",
+      "source_sha256": "163eb947da916b97dfabb24ff1fe70e5d8811fb3fdc281d0b27cd93413062b8a",
+      "target_sha256": "163eb947da916b97dfabb24ff1fe70e5d8811fb3fdc281d0b27cd93413062b8a"
+    },
+    {
+      "source": "src/ego_data_pipeline/inference/__init__.py",
+      "target": "src/ego_annotation/inference/__init__.py",
+      "source_sha256": "1c294f75b55095cc0e589af08a84f1a58b8191475d82110d5e55aa873c214df7",
+      "target_sha256": "1c294f75b55095cc0e589af08a84f1a58b8191475d82110d5e55aa873c214df7"
+    },
+    {
+      "source": "src/ego_data_pipeline/inference/worker.py",
+      "target": "src/ego_annotation/inference/worker.py",
+      "source_sha256": "5e529d426389df79e560b462be54e8eb290e6b745733a332eac57ba750257e11",
+      "target_sha256": "14a89206fd2dce1617737722df02aac7fccbc5a7052565d93d94ae8648ffbd2c"
+    },
+    {
+      "source": "src/ego_data_pipeline/inference/schema.py",
+      "target": "src/ego_annotation/inference/schema.py",
+      "source_sha256": "ed24444306c12951feeda2cb8b36ee9b850db663e576a6d815a6d1719a5e8f9f",
+      "target_sha256": "ed24444306c12951feeda2cb8b36ee9b850db663e576a6d815a6d1719a5e8f9f"
+    },
+    {
+      "source": "src/ego_data_pipeline/inference/attention.py",
+      "target": "src/ego_annotation/inference/attention.py",
+      "source_sha256": "4394931537204275d40dfcdea26133d96e312823c729118bc7a14d88761cf8eb",
+      "target_sha256": "4394931537204275d40dfcdea26133d96e312823c729118bc7a14d88761cf8eb"
+    },
+    {
+      "source": "src/ego_data_pipeline/inference/acceleration.py",
+      "target": "src/ego_annotation/inference/acceleration.py",
+      "source_sha256": "24853911577804f1ea49b91b8041cdc036c4dab287404ff21967ed74935ed8f9",
+      "target_sha256": "24853911577804f1ea49b91b8041cdc036c4dab287404ff21967ed74935ed8f9"
+    },
+    {
+      "source": "src/ego_data_pipeline/inference/model_identity.json",
+      "target": "src/ego_annotation/inference/model_identity.json",
+      "source_sha256": "a2be7a4d1cc78b6f79b0c6f0d564a617e3c3dc4a4cab93f536adfad2d621d0ec",
+      "target_sha256": "a2be7a4d1cc78b6f79b0c6f0d564a617e3c3dc4a4cab93f536adfad2d621d0ec"
+    },
+    {
+      "source": "skills/garment-review-policy.json",
+      "target": "skills/garment-review-policy.json",
+      "source_sha256": "922c0daf7d6bdffaa9c700c5f270441f20d9b71c50339f368fe217769210efb6",
+      "target_sha256": "922c0daf7d6bdffaa9c700c5f270441f20d9b71c50339f368fe217769210efb6"
+    },
+    {
+      "source": "skills/review-contract.md",
+      "target": "skills/review-contract.md",
+      "source_sha256": "adff605599812098f9b97b308b9c8d6441f947204d273a956f93cb2530fe36db",
+      "target_sha256": "adff605599812098f9b97b308b9c8d6441f947204d273a956f93cb2530fe36db"
+    },
+    {
+      "source": "skills/ego-text-review/SKILL.md",
+      "target": "skills/ego-text-review/SKILL.md",
+      "source_sha256": "648ce4cd64aa974b3fa70acae8381b5528c0f54dbd630d00e9869e26dc4ffab8",
+      "target_sha256": "648ce4cd64aa974b3fa70acae8381b5528c0f54dbd630d00e9869e26dc4ffab8"
+    },
+    {
+      "source": "skills/ego-image-review/SKILL.md",
+      "target": "skills/ego-image-review/SKILL.md",
+      "source_sha256": "5721d5756104ec8c57594d21d899eedf994b644b526b377d836d28348bdfa9c9",
+      "target_sha256": "5721d5756104ec8c57594d21d899eedf994b644b526b377d836d28348bdfa9c9"
+    },
+    {
+      "source": "src/ego_data_pipeline/review_flow.py",
+      "target": "src/ego_annotation/review_runner.py",
+      "source_sha256": "ed3c0fc83d06a02a78e127494428135dd293952c82204a47baa9b33a485765f2",
+      "extracted_symbols": [
+        "RetryLater",
+        "StillRunning",
+        "method_identity",
+        "model_stage",
+        "prompt",
+        "retry_authorized"
+      ],
+      "target_sha256": "61b736789f42c9c894a10400e6fc44605feaa04b59b96fc9bd655303271d17cb"
+    }
+  ]
+}
